@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Piano</title>
+    <style>
+     *{
+        text-align: center;
+        font-family:'inconsolata',monospace;
+       
+     }  
+.box{
+   
+    display: inline-flex;
+    background-color: rgb(255, 255, 255);
+            background-image:radial-gradient(#000000 5%,transparent 11%),
+            radial-gradient(#000000 5% ,transparent 15%);
+            background-repeat: repeat;
+            background-position:0 0,30px 30px ;
+            background-size: 10px 10px;
+            width:500px;
+          
+    
+}
+.box:hover{
+            animation:change 12s ease-in infinite;
+        }
+        @keyframes change{
+            0% {background-position: 0 45px;
+            }
+
+            25% {background-position: -180px 0px;
+            }
+            50%{
+                background-position: 180px 45px;
+            }
+            75%{
+                background-position: 60px 30px;
+            }
+           100%{
+            background-position:80px 30px;
+           }
+        }
+.same{
+background-color: white;
+height:130px;
+width:30px;
+
+}
+.same:hover{
+    cursor: pointer;
+    background-image:linear-gradient(-45deg,rgb(255, 255, 255),rgb(150, 148, 148),rgb(192, 192, 192),#fff,rgb(214, 214, 214));
+}
+.diff{
+background-color: black;
+height:70px;
+
+}
+.diff:hover{
+    cursor: pointer;
+    background-image:linear-gradient(-45deg,black,rgb(54, 51, 51),rgb(44, 43, 43),#fff,black);
+}
+.footer{
+    background-color: #000;
+    bottom:0;
+    width:100%;
+    left:0;
+    position: fixed;
+    color:white;
+}
+.header{
+    display:inline;
+}
+.black{
+    background-color: #000;
+    color:white;
+    
+}
+.p1{
+    animation:color 3s ease-in infinite;
+}
+@keyframes color{
+   
+            0% {color:#000
+            }
+
+            25% {color:#ffffff
+            }
+            50%{
+                color:#000000
+            }
+            75%{
+                color:#ffffff
+            }
+           100%{
+           color:#000
+           }
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="header">
+       <span style="font-size:45px;">P<span class="p1" style="font-size:45px;">i</span>an</span><span class="p1" style="font-size:45px;">o</span>
+        <br>
+        <br>
+        <button onclick="myfun()"><i class="fa-sharp fa-solid fa-circle-half-stroke"></i></button>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="box">
+        <br>
+        <br>
+        <br>
+    <button onclick="play()"class="same"></button>
+    <button onclick="play1()"class ="diff"></button>
+    <button onclick="play2()"class="same"></button>
+    <button onclick="play3()"class ="diff"></button>
+    <button onclick="play4()"class="same"></button>
+    <button onclick="play5()"class ="diff"></button>
+    <button onclick="play6()"class="same"></button>
+    <button onclick="play7()"class ="diff"></button>
+    <button onclick="play8()"class="same"></button>
+    <button onclick="play9()"class ="diff"></button>
+    <button onclick="play10()"class="same"></button>
+    <button onclick="play11()"class ="diff"></button>
+    <button onclick="play12()"class="same"></button>
+    <button onclick="play13()"class ="diff"></button>
+    <button onclick="play14()"class="same"></button>
+    <button onclick="play15()"class ="diff"></button>
+    <button onclick="play16()"class="same"></button>
+    <button onclick="play17()"class ="diff"></button>
+    <button onclick="play18()"class="same"></button>
+    <button onclick="play19()"class ="diff"></button>
+    <button onclick="play20()"class="same"></button>
+    <button onclick="play21()"class ="diff"></button>
+    <button onclick="play22()"class="same"></button>
+    <button onclick="play23()"class ="diff"></button>
+    <button onclick="play24()"class="same"></button>
+    </div>
+<div class="footer">
+    <details>
+        <summary>
+            Built with 🖤
+        </summary>
+        <p>By Shevy</p>
+    </details>
+</div>
+    <script>
+        function play() {
+          var audio = document.getElementById("audio0");
+          audio.play();
+        }
+         function play1() {
+          var audio = document.getElementById("audio1");
+          audio.play();
+        }
+        function play2() {
+          var audio = document.getElementById("audio2");
+          audio.play();
+        }
+        function play3() {
+          var audio = document.getElementById("audio3");
+          audio.play();
+        }
+        function play4() {
+          var audio = document.getElementById("audio4");
+          audio.play();
+        }
+        function play5() {
+          var audio = document.getElementById("audio5");
+          audio.play();
+        }
+        function play6() {
+          var audio = document.getElementById("audio6");
+          audio.play();
+        }
+        function play7() {
+          var audio = document.getElementById("audio7");
+          audio.play();
+        }
+        function play8() {
+          var audio = document.getElementById("audio8");
+          audio.play();
+        }
+        function play9() {
+          var audio = document.getElementById("audio9");
+          audio.play();
+        }
+        function play10() {
+          var audio = document.getElementById("audio10");
+          audio.play();
+        }
+        function play11() {
+          var audio = document.getElementById("audio11");
+          audio.play();
+        }
+        function play12() {
+          var audio = document.getElementById("audio12");
+          audio.play();
+        }
+        function play13() {
+          var audio = document.getElementById("audio13");
+          audio.play();
+        }
+        function play14() {
+          var audio = document.getElementById("audio14");
+          audio.play();
+        }
+        function play15() {
+          var audio = document.getElementById("audio15");
+          audio.play();
+        }
+        function play16() {
+          var audio = document.getElementById("audio16");
+          audio.play();
+        }
+        function play17() {
+          var audio = document.getElementById("audio17");
+          audio.play();
+        }
+        function play18() {
+          var audio = document.getElementById("audio18");
+          audio.play();
+        }
+        function play19() {
+          var audio = document.getElementById("audio19");
+          audio.play();
+        }
+        function play20() {
+          var audio = document.getElementById("audio20");
+          audio.play();
+        }
+        function play21() {
+          var audio = document.getElementById("audio21");
+          audio.play();
+        }
+        function play22() {
+          var audio = document.getElementById("audio22");
+          audio.play();
+        }
+        function play23() {
+          var audio = document.getElementById("audio23");
+          audio.play();
+        }
+        function play24() {
+          var audio = document.getElementById("audio24");
+          audio.play();
+        }
+        function play25() {
+          var audio = document.getElementById("audio25");
+          audio.play();
+        }
+         function myfun()
+         {
+            var element=document.body;
+            element.classList.toggle('black');
+         }
+     
+
+      </script>
+    
+       <audio id="audio0" src="audio1.mp3"></audio>
+       <audio id="audio1" src="audio2.mp3"></audio>
+       <audio id="audio2" src="audio3.mp3"></audio>
+       <audio id="audio3" src="audio4.mp3"></audio>
+       <audio id="audio4" src="audio5.mp3"></audio>
+       <audio id="audio5" src="audio6.mp3"></audio>
+       <audio id="audio6" src="audio7.mp3"></audio>
+       <audio id="audio7" src="audio8.mp3"></audio>
+       <audio id="audio8" src="audio9.mp3"></audio>
+       <audio id="audio9" src="audio10.mp3"></audio>
+       <audio id="audio10" src="audio11.mp3"></audio>
+       <audio id="audio11" src="audio12.mp3"></audio>
+       <audio id="audio12" src="audio13.mp3"></audio>
+       <audio id="audio13" src="audio14.mp3"></audio>
+       <audio id="audio14" src="audio15.mp3"></audio>
+       <audio id="audio15" src="audio16.mp3"></audio>
+       <audio id="audio16" src="audio17.mp3"></audio>
+       <audio id="audio17" src="audio18.mp3"></audio>
+       <audio id="audio18" src="audio19.mp3"></audio>
+       <audio id="audio19" src="audio20.mp3"></audio>
+       <audio id="audio20" src="audio21.mp3"></audio>
+       <audio id="audio21" src="audio22.mp3"></audio>
+       <audio id="audio22" src="audio23.mp3"></audio>
+       <audio id="audio23" src="audio24.mp3"></audio>
+       <audio id="audio24" src="audio25.mp3"></audio>
+       <audio id="audio25" src="audio26.mp3"></audio>
+
+
+
+</body>
+</html>
